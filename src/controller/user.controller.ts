@@ -28,4 +28,14 @@ export class UserController {
         return await this.userService.getUserInfo(phone);
     }
 
+    @Get('/my_activity')
+    async getMyActivities(@Query('id') id ) {
+        return "get my activity"
+    }
+
+    @Get('/my_message')
+    async getMyMessage(@Query('id') id) {
+        return "get my message"
+    }
+
 }
