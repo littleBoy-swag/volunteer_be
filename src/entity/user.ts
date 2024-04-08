@@ -7,6 +7,9 @@ export class User {
   @prop()
   public _id: number;
 
+  @prop({ default: true })
+  public active: boolean;
+
   @prop()
   public name?: string;
 
